@@ -10,7 +10,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 # ======================================
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\I SEvEN\Desktop\Telecom\TelecomCustomerChurnclean.csv")
+    df = pd.read_csv("TelecomCustomerChurnclean.csv")
 
     if 'customerid' in df.columns:
         df.drop(columns=['customerid'], inplace=True)
