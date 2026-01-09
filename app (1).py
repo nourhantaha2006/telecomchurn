@@ -51,7 +51,7 @@ def load_data():
 # ================================
 @st.cache_resource
 def load_model():
-    return joblib.load("random_forest_model.pkl")
+    return joblib.load("logistic_regression_model.pkl")
 
 
 # ================================
